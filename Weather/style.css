@@ -11,7 +11,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  font-family: 'Jeju Gothic', sans-serif;
+  font-family: "Jeju Gothic", sans-serif;
 }
 
 header,
@@ -120,7 +120,7 @@ h1 {
   height: 100%;
   width: 100%;
   background-color: black;
-  opacity: 0.8;
+  opacity: 0.6;
   z-index: 1;
 }
 
