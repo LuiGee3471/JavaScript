@@ -1,7 +1,5 @@
 const API_KEY = '7e894a2c970923032fb7a77ad196a872';
 const w1 = document.getElementById('w1');
-const w2 = document.getElementById('w2');
-const w3 = document.getElementById('w3');
 const main = document.getElementById('main');
 const chart24h = document.getElementById('chart24h');
 const chartDays = document.getElementById('chartDays');
@@ -23,7 +21,7 @@ function getWeatherNow(weatherList) {
     main.style.backgroundImage = "url('images/cloud.jpg')";
     weatherText.innerText = '구름이 많이 끼어 있어요';
     advice.innerText = '생각보다 쌀쌀할 수도 있으니 옷을 챙기세요';
-  } else if (now.getHours < 19 && now.getHours > 6) {
+  } else if (now.getHours() < 19 && now.getHours() > 6) {
     main.style.backgroundImage = "url('images/sunny.jpg')";
     weatherText.innerText = '화창한 날입니다';
     advice.innerText = '따뜻한 날씨를 마음껏 만끽하세요';
